@@ -14,7 +14,7 @@ public class CastingMain5 {
 
     private static void call(Parent parent) {
         parent.parentMethod();
-        if (parent instanceof Child) {
+        if (parent instanceof Child) { // 인자로 들어온 Parent 객체가 Child 인스턴스 인지 점검
             System.out.println("Child 인스턴스 맞음");
             Child child = (Child) parent;
             child.childMethod();

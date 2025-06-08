@@ -9,9 +9,10 @@ public class InterfaceMain {
         Cat cat = new Cat();
         Dog dog = new Dog();
         Caw caw = new Caw();
-
+        Wolf wolf = new Wolf();
         soundAnimal(cat);
         soundAnimal(dog);
+        soundAnimal(caw);
         soundAnimal(caw);
     }
 

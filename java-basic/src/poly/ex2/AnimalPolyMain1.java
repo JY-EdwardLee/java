@@ -16,7 +16,7 @@ public class AnimalPolyMain1 {
 
     private static void soundAnimal(Animal animal) {
         System.out.println("동물 소리 테스트 시작");
-        animal.sound();
+        animal.sound(); // 부모는 자식을 담을 수 있어서 담고, 오버라이딩 된 함수 사용
         System.out.println("동물 소리 테스트 종료");
     }
 }

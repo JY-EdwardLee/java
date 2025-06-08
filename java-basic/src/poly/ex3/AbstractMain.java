@@ -10,14 +10,18 @@ public class AbstractMain {
         Cat cat = new Cat();
         Caw caw = new Caw();
         Duck duck = new Duck();
+        Wolf wolf = new Wolf();
 
         cat.sound();
         cat.move();
+        wolf.sound();
+        wolf.move();
 
         soundAnimal(dog);
         soundAnimal(cat);
         soundAnimal(caw);
         soundAnimal(duck);
+        soundAnimal(wolf);
     }
 
     //변하지 않는 부분

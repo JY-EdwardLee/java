@@ -9,6 +9,7 @@ public class AbstractMain {
         Dog dog = new Dog();
         Cat cat = new Cat();
         Caw caw = new Caw();
+        Wolf wolf = new Wolf();
 
         soundAnimal(dog);
         soundAnimal(cat);
@@ -17,6 +18,7 @@ public class AbstractMain {
         moveAnimal(dog);
         moveAnimal(cat);
         moveAnimal(caw);
+        moveAnimal(wolf);
     }
 
     //변하지 않는 부분

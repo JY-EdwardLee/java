@@ -9,6 +9,7 @@ public class CastingMain1 {
         //poly.childMethod();
 
         //다운캐스팅(부모 타입 -> 자식 타입)
+        // Child child = (Child) poly; // 자식은 부모를 못 담는다. 대신 다운 캐스팅은 내가 책임진다. 라고 하고 poly에 Child 타입을 넣어버림
         Child child = (Child) poly; //x001
         child.childMethod();
     }
