@@ -14,7 +14,8 @@ public class ChronoUnitMain {
         System.out.println("HOURS.duration = " + ChronoUnit.HOURS.getDuration().getSeconds());
         System.out.println("DAYS = " + ChronoUnit.DAYS);
         System.out.println("DAYS.duration = " + ChronoUnit.DAYS.getDuration().getSeconds());
-
+        System.out.println("WEEKS = " + ChronoUnit.WEEKS);
+        System.out.println("WEEKS.duration = " + ChronoUnit.WEEKS.getDuration().getSeconds());
         //차이 구하기
         LocalTime lt1 = LocalTime.of(1, 10, 0);
         LocalTime lt2 = LocalTime.of(1, 20, 0);

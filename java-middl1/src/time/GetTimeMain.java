@@ -23,7 +23,7 @@ public class GetTimeMain {
         System.out.println("SECOND_OF_MINUTE = " + dt.getSecond());
 
         System.out.println("편의 메서드에 없음");
-        System.out.println("MINUTE_OF_DAY = " + dt.get(ChronoField.MINUTE_OF_DAY));
-        System.out.println("SECOND_OF_DAY = " + dt.get(ChronoField.SECOND_OF_DAY));
+        System.out.println("MINUTE_OF_DAY = " + dt.get(ChronoField.MINUTE_OF_DAY)); // 하룻동안 분
+        System.out.println("SECOND_OF_DAY = " + dt.get(ChronoField.SECOND_OF_DAY)); // 하룻동안 초
     }
 }

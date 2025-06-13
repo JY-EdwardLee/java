@@ -13,8 +13,11 @@ public class ChangeTimePlusMain {
         LocalDateTime plusDt1 = dt.plus(10, ChronoUnit.YEARS);
         System.out.println("plusDt1 = " + plusDt1);
 
-        LocalDateTime plusDt2 = dt.plusYears(10);
+        LocalDateTime plusDt2 = dt.plusYears(10); // 편의메서드
         System.out.println("plusDt2 = " + plusDt2);
+
+        LocalDateTime plusDt4 = dt.plusWeeks(2);// 편의메서드
+        System.out.println("plusDt2 = " + plusDt4);
 
         Period period = Period.ofYears(10);
         LocalDateTime plusDt3 = dt.plus(period);

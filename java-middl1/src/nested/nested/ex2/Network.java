@@ -7,6 +7,7 @@ public class Network {
         networkMessage.print();
     }
 
+    // NetworkMessage를 따로 뺄 필요가 없이 그냥 중첩해서 쓰면 캡슐화에 유리
     private static class NetworkMessage {
 
         private String content;

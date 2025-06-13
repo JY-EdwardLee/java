@@ -13,7 +13,7 @@ public enum Grade {
         return discountPercent;
     }
 
-    //추가
+    // 추가
     public int discount(int price) {
         return price * discountPercent / 100;
     }
