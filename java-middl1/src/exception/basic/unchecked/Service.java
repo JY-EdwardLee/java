@@ -15,7 +15,9 @@ public class Service {
     public void callCatch() {
         try {
             client.call();
-        } catch (MyUncheckedException e) {
+        }
+        // 잡기 잡으면 그냥 정상 로직으로 가면 됨
+        catch (MyUncheckedException e) {
             //예외 처리 로직
             System.out.println("예외 처리, message=" + e.getMessage());
         }

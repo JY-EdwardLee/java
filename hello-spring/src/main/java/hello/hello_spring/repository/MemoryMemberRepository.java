@@ -1,11 +1,13 @@
 package hello.hello_spring.repository;
 
-import hello.hello_spring.domian.Member;
+import hello.hello_spring.domain.Member;
 
 import java.util.*;
 
+//@Repository // 이래야 스프링이 리포지토리인지 안다.
 public class MemoryMemberRepository implements MemberRepository {
 
+    // 실무에서는 hashmap 안씀
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
@@ -32,5 +34,9 @@ public class MemoryMemberRepository implements MemberRepository {
     @Override
     public List<Member> findAll() {
         return new ArrayList <>(store.values());
+    }
+
+    public  void clearStore() {
+        store.clear();
     }
 }

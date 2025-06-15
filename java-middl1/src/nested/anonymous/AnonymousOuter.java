@@ -9,7 +9,7 @@ public class AnonymousOuter {
     public void process(int paramVar) {
 
         int localVar = 1;
-
+        // 생성하면서 바로 선언해버리기
         Printer printer = new Printer() {
             int value = 0;
 

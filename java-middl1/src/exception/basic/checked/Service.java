@@ -6,11 +6,17 @@ public class Service {
     /**
      * 예외를 잡아서 처리하는 코드
      */
-    public void callCatch() {
+    // 만일 catch에서 MyCheckedException을 못잡으면 던져줘야함
+    public void callCatch(){
         try {
+            // Client에서 throws로 던져져서 여기로 옴
             client.call();
-        } catch (MyCheckedException e) {
-            //예외 처리 로직
+        }
+        // 에러가 터진 것을 여기서 잡음 catch로 오면 처리된거라고 생각하면 됨
+        // catch (Exception e) { 부모니까 잡을 수 있음
+        // catch (RuntimeException e) { 못잡음 위에서 던져줘야함
+        catch (MyCheckedException e) {
+            //예외 처리 로직 (불 끄기)
             System.out.println("예외 처리, message=" + e.getMessage());
         }
         System.out.println("정상 흐름");
