@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(name="FrontControllerServletV1", urlPatterns = "/front-controller/v1/*")
+@WebServlet(name="FrontControllerServletV1", urlPatterns = "/front-ControllerV4/v1/*")
 public class FrontControllerServletV1 extends HttpServlet {
 
     // Map<키, 호출>
@@ -32,10 +32,10 @@ public class FrontControllerServletV1 extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("FrontControllerServletV1.service");
 
-        // request로 들어온 URI (front-controller/v1/{*})
+        // request로 들어온 URI (front-ControllerV4/v1/{*})
         String requestURI = request.getRequestURI();
 
-        // controller hashmap으로 controller 객체 사용
+        // ControllerV4 hashmap으로 ControllerV4 객체 사용
         ControllerV1 controller = controllerMap.get(requestURI);
         if (controller==null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
